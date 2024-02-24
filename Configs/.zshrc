@@ -5,7 +5,7 @@ ZSH=/usr/share/oh-my-zsh/
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # List of plugins used
-plugins=()
+plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # In case a command is not found, try to find the package that has it
@@ -73,5 +73,9 @@ alias ssh='kitten ssh'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-#Display Pokemon
-pokemon-colorscripts --no-title -r 1,3,6
+# Display pokemon when not in visual studio code, only gens 1 et 2
+if [ "$TERM_PROGRAM" != "vscode" ]; then
+	pokemon-colorscripts --no-title -r 1,2
+fi
+
+PATH=~/.console-ninja/.bin:$PATH
