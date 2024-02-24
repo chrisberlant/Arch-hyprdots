@@ -51,4 +51,22 @@ else
     echo "TLP is already installed."
 fi
 
+# Install Node.js if not already installed
+if ! package_installed nodejs; then
+    echo "Installing Node.js..."
+    pacman -S --noconfirm nodejs
+	echo "Node.js installation completed."
+else
+    echo "Node.js is already installed."
+fi
+
+# Install NPM if not already installed
+if ! package_installed npm; then
+    echo "Installing Node.js..."
+    pacman -S --noconfirm npm
+	echo "NPM installation completed."
+else
+    echo "NPM is already installed."
+fi
+
 
