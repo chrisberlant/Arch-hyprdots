@@ -22,8 +22,8 @@ cd ~/Hyprdots
 
 ## Changes
 
-Keyboard now uses AZERTY
-Pokémons are now displayed only outside VSCode, only gens 1 & 2
-New Arch theme for GRUB
-Updated wallpapers
+Keyboard now uses AZERTY  
+Pokémons are now displayed only outside VSCode, only gens 1 & 2  
+New Arch theme for GRUB  
+Updated wallpapers  
 Added CommitMono font
