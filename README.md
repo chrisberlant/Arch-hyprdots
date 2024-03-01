@@ -8,8 +8,8 @@ After a minimal Arch install (with grub and systemd), clone and execute as root 
 
 ```shell
 pacman -Sy git
-git clone --depth 1 https://github.com/chrisberlant/Arch-hyprdots ~/Hyprdots
-cd ~/Hyprdots/Scripts
+git clone --depth 1 https://github.com/chrisberlant/arch-hyprdots ~/hyprdots
+cd ~/hyprdots/Scripts
 ./install.sh
 ```
 
